@@ -11,6 +11,9 @@
 		F9EF7E622BE6DCD800C70D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E612BE6DCD800C70D52 /* ContentView.swift */; };
 		F9EF7E642BE6DCD900C70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EF7E632BE6DCD900C70D52 /* Assets.xcassets */; };
 		F9EF7E672BE6DCD900C70D52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EF7E662BE6DCD900C70D52 /* Preview Assets.xcassets */; };
+		F9EF7E6F2BE6DF0700C70D52 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E6E2BE6DF0700C70D52 /* Store.swift */; };
+		F9EF7E722BE6DF3100C70D52 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E712BE6DF3100C70D52 /* State.swift */; };
+		F9EF7E752BE6E16A00C70D52 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E742BE6E16A00C70D52 /* Reducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F9EF7E612BE6DCD800C70D52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9EF7E632BE6DCD900C70D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9EF7E662BE6DCD900C70D52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9EF7E6E2BE6DF0700C70D52 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F9EF7E712BE6DF3100C70D52 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		F9EF7E742BE6E16A00C70D52 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		F9EF7E5E2BE6DCD800C70D52 /* Redux Playground */ = {
 			isa = PBXGroup;
 			children = (
+				F9EF7E732BE6E16200C70D52 /* Reducer */,
+				F9EF7E702BE6DF2B00C70D52 /* State */,
+				F9EF7E6D2BE6DEFE00C70D52 /* Store */,
 				F9EF7E5F2BE6DCD800C70D52 /* Redux_PlaygroundApp.swift */,
 				F9EF7E612BE6DCD800C70D52 /* ContentView.swift */,
 				F9EF7E632BE6DCD900C70D52 /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				F9EF7E662BE6DCD900C70D52 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9EF7E6D2BE6DEFE00C70D52 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F9EF7E6E2BE6DF0700C70D52 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F9EF7E702BE6DF2B00C70D52 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F9EF7E712BE6DF3100C70D52 /* State.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		F9EF7E732BE6E16200C70D52 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				F9EF7E742BE6E16A00C70D52 /* Reducer.swift */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EF7E6F2BE6DF0700C70D52 /* Store.swift in Sources */,
 				F9EF7E622BE6DCD800C70D52 /* ContentView.swift in Sources */,
 				F9EF7E602BE6DCD800C70D52 /* Redux_PlaygroundApp.swift in Sources */,
+				F9EF7E752BE6E16A00C70D52 /* Reducer.swift in Sources */,
+				F9EF7E722BE6DF3100C70D52 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

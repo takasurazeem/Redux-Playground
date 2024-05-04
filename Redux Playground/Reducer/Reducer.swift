@@ -17,6 +17,10 @@ struct IncrementAction: Action {
   
 }
 
+struct DecrementAction: Action {
+  
+}
+
 func reducer(
   _ state: State,
   _ action: Action
@@ -26,6 +30,8 @@ func reducer(
   switch action {
     case _ as IncrementAction:
       state.counter += 1
+    case _ as DecrementAction:
+      state.counter -= 1
     default:
       break
   }

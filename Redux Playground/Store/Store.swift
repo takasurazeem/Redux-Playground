@@ -8,10 +8,10 @@
 import Foundation
 
 /// Global Store
-class Store {
+class Store: ObservableObject {
   
   var reducer: Reducer
-  var state: State
+  @Published var state: State
   
   init(
     reducer: @escaping Reducer,
@@ -21,4 +21,7 @@ class Store {
     self.state = state
   }
   
+  func dispatch(action: Action) {
+    state = reducer(state, action)
+  }
 }

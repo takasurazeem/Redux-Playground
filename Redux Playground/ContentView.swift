@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  
+  @EnvironmentObject var store: Store
+  
+  struct Props {
+    let counter: Int
+    let onIncrement: () -> Void
+  }
+  
+  private func map(state: State) -> Props {
+    Props(counter: state.counter) {
+      store.dispatch(action: IncrementAction())
     }
+  }
+  
+  var body: some View {
+    let props = map(state: store.state)
+    
+    return VStack {
+      Text("\(props.counter)")
+      Button("Increment", action: props.onIncrement)
+    }
+    .padding()
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
+  
 }

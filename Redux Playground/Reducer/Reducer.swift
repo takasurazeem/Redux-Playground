@@ -13,13 +13,11 @@ protocol Action {
   
 }
 
-struct IncrementAction: Action {
-  
-}
+struct IncrementAction: Action { }
 
-struct DecrementAction: Action {
-  
-}
+struct DecrementAction: Action { }
+
+struct AddAction: Action { }
 
 func reducer(
   _ state: State,
@@ -32,6 +30,8 @@ func reducer(
       state.counter += 1
     case _ as DecrementAction:
       state.counter -= 1
+    case _ as AddAction:
+      state.counter += 100
     default:
       break
   }

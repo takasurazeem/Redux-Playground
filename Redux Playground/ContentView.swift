@@ -34,6 +34,6 @@ struct ContentView: View {
 }
 
 #Preview {
-  ContentView()
-  
+  let store = Store(reducer: reducer)
+  return ContentView().environmentObject(store)
 }

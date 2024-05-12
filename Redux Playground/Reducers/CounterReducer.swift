@@ -8,9 +8,9 @@
 import Foundation
 
 func counterReducer(
-  _ state: State,
+  _ state: CounterState,
   _ action: Action
-) -> State {
+) -> CounterState {
   var state = state
   
   switch action {

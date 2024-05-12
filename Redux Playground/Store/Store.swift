@@ -8,14 +8,14 @@
 import Foundation
 
 /// Global Store
-class Store: ObservableObject {
+class Store<StoreState: ReduxState>: ObservableObject {
   
-  var reducer: Reducer
-  @Published var state: State
+  var reducer: Reducer<StoreState>
+  @Published var state: StoreState
   
   init(
-    reducer: @escaping Reducer,
-    state: State = State()
+    reducer: @escaping Reducer<StoreState>,
+    state: StoreState
   ) {
     self.reducer = reducer
     self.state = state

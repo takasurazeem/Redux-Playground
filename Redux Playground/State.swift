@@ -7,7 +7,13 @@
 
 import Foundation
 
-/// Global State
-struct State {
+protocol ReduxState { }
+
+struct CounterState: ReduxState {
   var counter = 0
+}
+
+/// Global State
+struct AppState: ReduxState {
+  var counterState = CounterState()
 }

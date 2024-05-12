@@ -9,9 +9,9 @@ import Foundation
 
 
 func appReducer(
-  _ state: State,
+  _ state: AppState,
   _ action: Action
-) -> State {
+) -> AppState {
   
   return state
 }

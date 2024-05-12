@@ -57,7 +57,6 @@
 		F9EF7E5E2BE6DCD800C70D52 /* Redux Playground */ = {
 			isa = PBXGroup;
 			children = (
-				F9EF7E732BE6E16200C70D52 /* Reducer */,
 				F9EF7E702BE6DF2B00C70D52 /* State */,
 				F9EF7E6D2BE6DEFE00C70D52 /* Store */,
 				F9EF7E5F2BE6DCD800C70D52 /* Redux_PlaygroundApp.swift */,
@@ -87,17 +86,18 @@
 		F9EF7E702BE6DF2B00C70D52 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				F9EF7E732BE6E16200C70D52 /* Reducers */,
 				F9EF7E712BE6DF3100C70D52 /* State.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
 		};
-		F9EF7E732BE6E16200C70D52 /* Reducer */ = {
+		F9EF7E732BE6E16200C70D52 /* Reducers */ = {
 			isa = PBXGroup;
 			children = (
 				F9EF7E742BE6E16A00C70D52 /* Reducer.swift */,
 			);
-			path = Reducer;
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

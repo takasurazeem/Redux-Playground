@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F955DC852BF16A0B00627242 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955DC842BF16A0B00627242 /* CounterReducer.swift */; };
+		F955DC872BF16A9C00627242 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955DC862BF16A9C00627242 /* AppReducer.swift */; };
 		F9EF7E602BE6DCD800C70D52 /* Redux_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E5F2BE6DCD800C70D52 /* Redux_PlaygroundApp.swift */; };
 		F9EF7E622BE6DCD800C70D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E612BE6DCD800C70D52 /* ContentView.swift */; };
 		F9EF7E642BE6DCD900C70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EF7E632BE6DCD900C70D52 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F955DC842BF16A0B00627242 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		F955DC862BF16A9C00627242 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		F9EF7E5C2BE6DCD800C70D52 /* Redux Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EF7E5F2BE6DCD800C70D52 /* Redux_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux_PlaygroundApp.swift; sourceTree = "<group>"; };
 		F9EF7E612BE6DCD800C70D52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				F9EF7E742BE6E16A00C70D52 /* Reducer.swift */,
+				F955DC862BF16A9C00627242 /* AppReducer.swift */,
+				F955DC842BF16A0B00627242 /* CounterReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9EF7E6F2BE6DF0700C70D52 /* Store.swift in Sources */,
+				F955DC852BF16A0B00627242 /* CounterReducer.swift in Sources */,
+				F955DC872BF16A9C00627242 /* AppReducer.swift in Sources */,
 				F9EF7E622BE6DCD800C70D52 /* ContentView.swift in Sources */,
 				F9EF7E602BE6DCD800C70D52 /* Redux_PlaygroundApp.swift in Sources */,
 				F9EF7E752BE6E16A00C70D52 /* Reducer.swift in Sources */,

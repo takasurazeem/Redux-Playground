@@ -16,4 +16,9 @@ struct CounterState: ReduxState {
 /// Global State
 struct AppState: ReduxState {
   var counterState = CounterState()
+  var taskState = TaskState()
+}
+
+struct TaskState: ReduxState {
+  var tasks: [Task] = []
 }

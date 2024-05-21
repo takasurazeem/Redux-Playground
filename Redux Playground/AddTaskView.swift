@@ -28,9 +28,6 @@ struct AddTaskView: View {
   var body: some View {
     let props = map(state: store.state.taskState)
     return VStack {
-      List(props.tasks) { task in
-        Text(task.title)
-      }
       TextField("Enter Task", text: $name)
         .textFieldStyle(.roundedBorder)
       
@@ -41,6 +38,9 @@ struct AddTaskView: View {
         name = ""
       }
       Spacer()
+      List(props.tasks) { task in
+        Text(task.title)
+      }
     }
     .padding()
   }

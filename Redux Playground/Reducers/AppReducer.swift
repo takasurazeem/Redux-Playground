@@ -14,6 +14,7 @@ func appReducer(
 ) -> AppState {
   var state = state
   state.counterState = counterReducer(state.counterState, action)
+  state.taskState = taskReducer(state.taskState, action)
   return state
 }
 

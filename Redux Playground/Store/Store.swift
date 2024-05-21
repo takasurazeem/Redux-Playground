@@ -12,16 +12,25 @@ class Store<StoreState: ReduxState>: ObservableObject {
   
   var reducer: Reducer<StoreState>
   @Published var state: StoreState
+  var middleWares: [MiddleWare<StoreState>]
   
   init(
     reducer: @escaping Reducer<StoreState>,
-    state: StoreState
+    state: StoreState,
+    middleWares: [MiddleWare<StoreState>] = []
   ) {
     self.reducer = reducer
     self.state = state
+    self.middleWares = middleWares
   }
   
   func dispatch(action: Action) {
-    state = reducer(state, action)
+    DispatchQueue.main.async {
+      self.state = self.reducer(self.state, action)
+    }
+    // run all middlewares
+    middleWares.forEach { middleWare in
+      middleWare(state, action, dispatch)
+    }
   }
 }

@@ -12,6 +12,7 @@
 		F955DC892BF16EC700627242 /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955DC882BF16EC700627242 /* TaskReducer.swift */; };
 		F955DC8C2BF16F5300627242 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955DC8B2BF16F5300627242 /* Task.swift */; };
 		F955DC8E2BFBC9E700627242 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955DC8D2BFBC9E700627242 /* AddTaskView.swift */; };
+		F987B1802BFCC9B900DFE75D /* LoggingMiddleWare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987B17F2BFCC9B900DFE75D /* LoggingMiddleWare.swift */; };
 		F9EF7E602BE6DCD800C70D52 /* Redux_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E5F2BE6DCD800C70D52 /* Redux_PlaygroundApp.swift */; };
 		F9EF7E622BE6DCD800C70D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF7E612BE6DCD800C70D52 /* ContentView.swift */; };
 		F9EF7E642BE6DCD900C70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EF7E632BE6DCD900C70D52 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		F955DC882BF16EC700627242 /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
 		F955DC8B2BF16F5300627242 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F955DC8D2BFBC9E700627242 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		F987B17F2BFCC9B900DFE75D /* LoggingMiddleWare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingMiddleWare.swift; sourceTree = "<group>"; };
 		F9EF7E5C2BE6DCD800C70D52 /* Redux Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EF7E5F2BE6DCD800C70D52 /* Redux_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux_PlaygroundApp.swift; sourceTree = "<group>"; };
 		F9EF7E612BE6DCD800C70D52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F987B17E2BFCC9AC00DFE75D /* MiddleWares */ = {
+			isa = PBXGroup;
+			children = (
+				F987B17F2BFCC9B900DFE75D /* LoggingMiddleWare.swift */,
+			);
+			path = MiddleWares;
+			sourceTree = "<group>";
+		};
 		F9EF7E532BE6DCD800C70D52 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		F9EF7E5E2BE6DCD800C70D52 /* Redux Playground */ = {
 			isa = PBXGroup;
 			children = (
+				F987B17E2BFCC9AC00DFE75D /* MiddleWares */,
 				F955DC8A2BF16F4C00627242 /* Model */,
 				F9EF7E702BE6DF2B00C70D52 /* State */,
 				F9EF7E6D2BE6DEFE00C70D52 /* Store */,
@@ -198,6 +209,7 @@
 				F955DC852BF16A0B00627242 /* CounterReducer.swift in Sources */,
 				F955DC872BF16A9C00627242 /* AppReducer.swift in Sources */,
 				F955DC8E2BFBC9E700627242 /* AddTaskView.swift in Sources */,
+				F987B1802BFCC9B900DFE75D /* LoggingMiddleWare.swift in Sources */,
 				F9EF7E622BE6DCD800C70D52 /* ContentView.swift in Sources */,
 				F9EF7E602BE6DCD800C70D52 /* Redux_PlaygroundApp.swift in Sources */,
 				F9EF7E752BE6E16A00C70D52 /* Reducer.swift in Sources */,

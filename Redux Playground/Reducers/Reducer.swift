@@ -7,7 +7,9 @@
 
 import Foundation
 
+typealias Dispatcher = (Action) -> Void
 typealias Reducer<State: ReduxState> = (_ state: State, _ action: Action) -> State
+typealias MiddleWare<StoreState: ReduxState> = (StoreState, Action, @escaping (Dispatcher)) -> Void
 
 protocol Action {
   

@@ -23,6 +23,8 @@ struct AddAction: Action {
   let value: Int
 }
 
+struct IncrementActionAsync: Action { }
+
 struct AddTaskAction: Action {
   let task: Task
 }

@@ -23,6 +23,6 @@ func counterReducer(
     default:
       break
   }
-  
+  print(state)
   return state
 }
